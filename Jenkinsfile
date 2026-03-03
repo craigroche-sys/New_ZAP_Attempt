@@ -20,7 +20,7 @@ pipeline {
                     environment{
                         ZAP_HOME = 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\ZAP_Test_3\\ZAP\\Zed Attack Proxy'
                         PATH = 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\ZAP_Test_3\\ZAP\\Zed Attack Proxy;%PATH%'
-                        JAVA_HOME = 'C:\\Program Files\\Java\\jdk-25.0.2
+                        JAVA_HOME = 'C:\\Program Files\\Java\\jdk-25.0.2'
                     } 
                 }
             }

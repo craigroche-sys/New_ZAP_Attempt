@@ -17,6 +17,11 @@ pipeline {
             steps{
                 script{
                     startZap(host: "localhost", port:9091, timeout:500, zapHome: "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\ZAP_Test_3\\ZAP\\Zed Attack Proxy", allowedHosts:['github.com'])
+                    environment{
+                        ZAP_HOME = 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\ZAP_Test_3\\ZAP\\Zed Attack Proxy'
+                        PATH = 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\ZAP_Test_3\\ZAP\\Zed Attack Proxy;%PATH%'
+                        JAVA_HOME = 'C:\\Program Files\\Java\\jdk-25.0.2
+                    } 
                 }
             }
         }

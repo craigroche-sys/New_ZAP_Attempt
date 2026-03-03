@@ -16,7 +16,7 @@ pipeline {
         stage('Setup'){
             steps{
                 script{
-                    startZap(host: "localhost", port:9091, timeout:500, zapHome: "C:\\Program Data\\ZAP\\Zed Attack Proxy", allowedHosts:['github.com'])
+                    startZap(host: "localhost", port:9091, timeout:500, zapHome: "C:\\ProgramData\\ZAP\\Zed Attack Proxy", allowedHosts:['github.com'])
                 }
             }
         }
